@@ -12,7 +12,8 @@
 		"babel-preset-react-native": "4.0.0",
 		"metro-react-native-babel-preset": "^0.45.0",
 		"react": "16.6.3",
-		"react-native": "0.58.6"
+		"react-native": "0.58.6",
+		"react-navigation": "2.18.3"
 	},
 	"devDependencies": {
 		"babel-preset-env": "^1.7.0",
