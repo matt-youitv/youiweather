@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  Platform,
+  NativeModules,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -135,6 +135,7 @@ export class CurrentWeather extends Component {
       fetching
     } = this.state;
     console.log(`rendering card view for ${city.name}`);
+    console.log(`~~~ ${Platform.OS} ~~~`);
     return (
       <TouchableOpacity
         style={styles.button}
@@ -291,12 +292,12 @@ const styles = StyleSheet.create({
     height: 125,
     borderRadius: 5,
     borderRadius: 5,
-    shadowColor: Platform.OS === "android" ? "#004300" : "#006BE6",
+    shadowColor: NativeModules.PlatformConstants.platform === 'android' ? "#004300" : "#006BE6",
     shadowRadius: 2,
     shadowOffset: { height: 1, width: 0 },
     shadowOpacity: 1,
     flexDirection: "row",
-    backgroundColor: Platform.OS === "android" ?  "#009038" : "#249EFF"
+    backgroundColor: NativeModules.PlatformConstants.platform === 'android' ?  "#009038" : "#249EFF"
   },
   temperatureContainer: {
     flex: 4,

@@ -4,31 +4,40 @@
 "use strict";
 
 import React from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { Text, View, StyleSheet, FlatList, TouchableOpacity, NativeModules } from 'react-native';
+import { FormFactor } from "@youi/react-native-youi";
 
+import { HeaderTitle } from 'components/HeaderTitle';
 import { AboutButton } from 'components/AboutButton';
 import { CurrentWeather } from 'components/CurrentWeather';
+import { CommonStyles } from '../styles';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import AppIcon from 'react-native-vector-icons/FontAwesome';
 
-export default class Lander extends React.Component {
+export class Lander extends React.Component {
 
   static navigationOptions = ({ navigation }) => {
+    const { params = {} } = navigation.state;
+  
     return {
-      headerLeft: () => (<Icon style={styles.appIcon} name='sun-o' color='orange' size={40} />),
-      headerTitle: 'You.i Weather',
+      headerLeft: () => (
+        <AppIcon style={styles.appIcon} name="sun-o" color="orange" size={40} />
+      ),
+      headerTitle: () => <HeaderTitle title="Expo Weather" />,
       headerRight: () => (
         <View style={styles.headerButtonContainer}>
           <AboutButton launchOverlay={() => params.setAboutOverlay(true)} />
         </View>
-      ),
-      headerRightStyle: { width: 500 },
-      headerStyle: { backgroundColor: '#0A84FF' },
-      headerTitleStyle: { color: '#FFF' }
+      )
     }
   };
 
   citiesList = [{"id":1,"name":"New York,us","lat":null,"lon":null},{"id":2,"name":"London,uk","lat":null,"lon":null},{"id":3,"name":"Moscow,ru","lat":null,"lon":null},{"id":4,"name":"Tokyo,jp","lat":null,"lon":null}];
+
+  onAddCityPressed = () => {
+    console.log("add a city");
+    this.props.navigation.navigate("AddLocation", { onSubmit: this.onSubmit });
+  };
 
   render() {
     return (
@@ -46,7 +55,14 @@ export default class Lander extends React.Component {
             />
           )}
           keyExtractor={item => item.id.toString()}
+          horizontal={FormFactor.isTV}
         />
+        <TouchableOpacity
+          style={[CommonStyles.editButton, styles.button]}
+          onPress={this.onAddCityPressed}
+        >
+          <Text style={styles.buttonText}>Add City</Text>
+        </TouchableOpacity>
       </View>
     );
   }

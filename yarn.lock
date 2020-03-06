@@ -833,6 +833,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@react-native-community/netinfo@^5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/netinfo/-/netinfo-5.5.1.tgz#6433d4d9d5fbe836f019e5a88a6a24b6e2dc50b9"
+  integrity sha512-6NKX/WzzC5FP2RSzoq+7CW/iIiRL2S6yN0JKiGvZ8EWAzJ43dbX5KG4kRa1JiKopAal5Vyh80dymbygeylwekQ==
+
 "@types/babel__core@^7.1.0":
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.6.tgz#16ff42a5ae203c9af1c6e190ed1f30f83207b610"
@@ -902,6 +907,13 @@
   integrity sha512-XAvHLwG7UQ+8M4caKIH0ZozIOYay5fQkAgyIXegXT9jPtdIGdhga+sUEdAr1CiG46aB+c64xQEYyEzlwWVTNzA==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@unimodules/core@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@unimodules/core/-/core-5.0.0.tgz#e1e3ca3f91f3d27dbc93c6eebc03a40c711da755"
+  integrity sha512-PswccfzFIviX61Lm8h6/QyC94bWe+6cARwhzgzTCKa6aR6azmi4732ExhX4VxfQjJNHB0szYVXGXVEDsFkj+tQ==
+  dependencies:
+    compare-versions "^3.4.0"
 
 "@youi/react-native-youi@5.10.0":
   version "5.10.0"
@@ -2298,6 +2310,11 @@ commondir@^1.0.1:
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
+compare-versions@^3.4.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-3.6.0.tgz#1a5689913685e5a87637b8d3ffca75514ec41d62"
+  integrity sha512-W6Af2Iw1z4CB7q4uU4hv646dW9GQuBM+YpC0UvUCWSD8w90SJjp+ujJuXaEMtAXBtSqGfMPuFOVn4/+FlaqfBA==
+
 component-emitter@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
@@ -2394,10 +2411,10 @@ create-react-class@^15.6.3:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
-create-react-context@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.2.tgz#9836542f9aaa22868cd7d4a6f82667df38019dca"
-  integrity sha512-KkpaLARMhsTsgp0d2NA/R94F/eDLbhXERdIq3LvX2biCAXcDvHYoOqHfWCHf1+OLj+HKBotLG3KqaOOf+C1C+A==
+create-react-context@^0.2.1:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.2.3.tgz#9ec140a6914a22ef04b8b09b7771de89567cb6f3"
+  integrity sha512-CQBmD0+QGgTaxDL3OX1IDXYqjkp2It4RIbcb99jS6AEg27Ga+a9G3JtK6SIu0HBwPLZlmwt9F7UwWA4Bn92Rag==
   dependencies:
     fbjs "^0.8.0"
     gud "^1.0.0"
@@ -2449,11 +2466,6 @@ data-urls@^1.0.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
-
-debounce@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
-  integrity sha512-mYtLl1xfZLi1m4RtQYlZgJUNQjl4ZxVnHzIR8nLLgi4q1YT8o/WM+MK/f8yfcc9s5Ir5zRaPZyZU6xs1Syoocg==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -2795,6 +2807,13 @@ expect@^24.9.0:
     jest-matcher-utils "^24.9.0"
     jest-message-util "^24.9.0"
     jest-regex-util "^24.9.0"
+
+expo-device@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/expo-device/-/expo-device-2.0.0.tgz#05c8c2cc0147e937783bf7496d6dea83a25bdebf"
+  integrity sha512-iF5U55AbARpuywByFlf4uFGigMaXXPTc34TcC36CLKiwkoUguW0TXuq1UCfEjZiLYEF9v+rKZ2rQb2CSvo+nQA==
+  dependencies:
+    ua-parser-js "^0.7.19"
 
 extend-shallow@^1.1.2:
   version "1.1.4"
@@ -4755,6 +4774,11 @@ mock-socket@^8.0.2:
   dependencies:
     url-parse "^1.4.4"
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
 morgan@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.9.1.tgz#0a8d16734a1d9afbc824b99df87e738e58e2da59"
@@ -5435,19 +5459,19 @@ react-native-drawer-layout@1.3.2:
   dependencies:
     react-native-dismiss-keyboard "1.0.0"
 
-react-native-safe-area-view@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.11.0.tgz#4f3dda43c2bace37965e7c6aef5fc83d4f19d174"
-  integrity sha512-N3nElaahu1Me2ltnfc9acpgt1znm6pi8DSadKy79kvdzKwvVIzw0IXueA/Hjr51eCW1BsfNw7D1SgBT9U6qEkA==
+react-native-safe-area-view@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"
+  integrity sha512-SjLdW/Th0WVMhyngH4O6yC21S+O4U4AAG3QxBr7fZ2ftgjXSpKbDHAhEpxBdFwei6HsnsC2h9oYMtPpaW9nfGg==
   dependencies:
     hoist-non-react-statics "^2.3.1"
 
-react-native-screens@^1.0.0-alpha.11:
-  version "1.0.0-alpha.23"
-  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.23.tgz#25d7ea4d11bda4fcde2d1da7ae50271c6aa636e0"
-  integrity sha512-tOxHGQUN83MTmQB4ghoQkibqOdGiX4JQEmeyEv96MKWO/x8T2PJv84ECUos9hD3blPRQwVwSpAid1PPPhrVEaw==
+react-native-safe-area-view@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.8.0.tgz#22d78cb8e8658d04a10cd53c1546e0bc86cb7aea"
+  integrity sha512-uAUzpBxXPVmfupz71GYcPjUBnZFtDuThKO/Q4FWEUykSuML78lItYR6JRsE006CY6gw6mUwpk4MJjhDE4uZ+Ww==
   dependencies:
-    debounce "^1.2.0"
+    hoist-non-react-statics "^2.3.1"
 
 react-native-tab-view@^0.0.77:
   version "0.0.77"
@@ -5545,38 +5569,32 @@ react-navigation-drawer@0.5.0:
   dependencies:
     react-native-drawer-layout-polyfill "^1.3.2"
 
-react-navigation-stack@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-navigation-stack/-/react-navigation-stack-0.7.0.tgz#0b2f139ee1cba953037ef51353df992ec6c74fa2"
-  integrity sha512-3Tbb/SsustBrM9R/qaI6XuOfyqYMVbwkeHFC8NbU890vB0aKZvjAtioWLZ18e/4LgbiOCmoTdp37z3gkGDyNDQ==
-
-react-navigation-tabs@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.8.2.tgz#65f8a6ce368684227603345b4d312da2ef3366e1"
-  integrity sha512-q2xfY79ERj4XJek3rceveifUny3Qcg7y6bNlN6wQg6c7D/pMFOGZsSALGenF7CuNDhYyEkijlnGTHl1laZgbDw==
+react-navigation-tabs@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-navigation-tabs/-/react-navigation-tabs-0.6.0.tgz#2f526194f4360e56c2702e736887449acc2080dc"
+  integrity sha512-Ax1rujJ51R1Jrz7b5bHUAIgsYC1VrFws+d3hxlPy5dXG84iJdV5dnDFRvdQMDDfDZc+NDx2a223lAYsc3p2+XA==
   dependencies:
     hoist-non-react-statics "^2.5.0"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
+    react-native-safe-area-view "^0.7.0"
     react-native-tab-view "^1.0.0"
 
-react-navigation@2.17.0:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.17.0.tgz#ebc5a92d7633f529ca340a38146637ff01f969a4"
-  integrity sha512-OT3V5ZGA+VOFydjJg5JAo/sh94stWoyEYXOVdAz98Rw4UW3BATUG6Y/4ROMbBSlYl2PvGfc9Q1+RHEhy5Xjp8A==
+react-navigation@2.11.2:
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.11.2.tgz#cd099f6d7d09efe48ef8463614a3abb113d45c01"
+  integrity sha512-K+nCEfyhxYhn4oyYf3CwygOhYob5ZIeoIXnBb9RVOzNxoAf62tTNd9EhfaLitAehlkH1tGDCt9FARBiqYUWR5g==
   dependencies:
     clamp "^1.0.1"
-    create-react-context "0.2.2"
+    create-react-context "^0.2.1"
     hoist-non-react-statics "^2.2.0"
     path-to-regexp "^1.7.0"
     query-string "^6.1.0"
     react-lifecycles-compat "^3"
-    react-native-safe-area-view "0.11.0"
-    react-native-screens "^1.0.0-alpha.11"
+    react-native-safe-area-view "^0.8.0"
     react-navigation-deprecated-tab-navigator "1.3.0"
     react-navigation-drawer "0.5.0"
-    react-navigation-stack "0.7.0"
-    react-navigation-tabs "0.8.2"
+    react-navigation-tabs "0.6.0"
 
 react-proxy@^1.1.7:
   version "1.1.8"
@@ -6571,7 +6589,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-ua-parser-js@^0.7.18:
+ua-parser-js@^0.7.18, ua-parser-js@^0.7.19:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
