@@ -4,7 +4,7 @@
 "use strict";
 
 import React from 'react';
-import { Text, View, StyleSheet, FlatList, TouchableOpacity, NativeModules } from 'react-native';
+import { Text, View, Button, StyleSheet, FlatList, TouchableOpacity, NativeModules } from 'react-native';
 import { FormFactor } from "@youi/react-native-youi";
 
 import { HeaderTitle } from 'components/HeaderTitle';
@@ -20,14 +20,13 @@ export class Lander extends React.Component {
     const { params = {} } = navigation.state;
   
     return {
+      headerStyle: { backgroundColor: 'yellow' },
       headerLeft: () => (
         <AppIcon style={styles.appIcon} name="sun-o" color="orange" size={40} />
       ),
       headerTitle: () => <HeaderTitle title="Expo Weather" />,
-      headerRight: () => (
-        <View style={styles.headerButtonContainer}>
-          <AboutButton launchOverlay={() => params.setAboutOverlay(true)} />
-        </View>
+      headerRight: (
+        <AboutButton />
       )
     }
   };
